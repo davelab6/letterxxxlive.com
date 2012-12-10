@@ -182,6 +182,7 @@
           google: { families: [ font.family ] },
           active: function() {
             wiggleText.fadeIn(700);
+            $(window).trigger('resize');
           }
         });
       }
