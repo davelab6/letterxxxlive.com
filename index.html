@@ -131,7 +131,9 @@
 	    </div>
 	    </div>
 
-      <h1 class="wiggle">xxx</h1>
+      <div class="wiggle">
+        <div>xxx</div>
+      </div>
       <p id="font-name" class="fontname"></p>
 
     </div> <!-- /container -->
@@ -152,7 +154,7 @@
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
-    <script src="assets/js/jquery.fittext.js"></script>
+    <script src="assets/js/bigtext.js"></script>
 
     <script>
 
@@ -172,7 +174,7 @@
       var wiggleText = $('.wiggle');
 
       var wiggleLetters = getWiggleLetters(wiggleText.text());
-      wiggleText.fitText(0.4);
+      wiggleText.bigtext();
 
       var _currentFont;
       var _fontCache;
